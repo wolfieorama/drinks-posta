@@ -9,6 +9,8 @@ public class story1 extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.story1);
+
+
     }
 }
 

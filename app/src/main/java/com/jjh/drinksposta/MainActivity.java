@@ -14,7 +14,7 @@ import android.widget.TextView;
 public class MainActivity extends ActionBarActivity {
 
     Button button;
-    TextView textview3;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +29,5 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(i);
             }
         });
-
-        TextView textview3 = (TextView) findViewById(R.id.textView3);
-        textview3.setMovementMethod(LinkMovementMethod.getInstance());
     }
 }

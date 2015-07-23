@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -21,10 +22,10 @@ public class one extends ActionBarActivity {
         setContentView(R.layout.one);
 
         // Get ListView object from xml
-                listView = (ListView) findViewById(R.id.listView);
+        listView = (ListView) findViewById(R.id.listView);
 
         // Defined Array values to show in ListView
-        String[] values = new String[] { "in array we start at 0",
+        String[] values = new String[]{"product",
                 "this is Sample stories 1",
                 "this is sample story 2",
                 "sample 3 baby!!!",
@@ -60,18 +61,27 @@ public class one extends ActionBarActivity {
                                     int position, long id) {
 
                 // ListView Clicked item index
-                int itemPosition     = position;
+                int itemPosition = position;
 
                 // ListView Clicked item value
-                String  itemValue    = (String) listView.getItemAtPosition(position);
+                String itemValue = (String) listView.getItemAtPosition(position);
 
                 // Show Alert
                 Toast.makeText(getApplicationContext(),
-                        "Story :"+itemPosition+" " +itemValue , Toast.LENGTH_LONG)
+                        "Story :" + " " + itemValue, Toast.LENGTH_LONG)
                         .show();
 
             }
-
+//            listView.OnItemClickListener(new OnItemClickListener() {
+//                public void onItemClick(AdapterView<?> arg 0, View v, int position, long id) {
+//                    if (position == 0)
+//                    {
+//                        Intent myIntent = new Intent(getApplicationContext(), story1.class);
+//                        startActivity(myIntent);
+//                    }
+//                }
+//            });
         });
+
     }
 }
