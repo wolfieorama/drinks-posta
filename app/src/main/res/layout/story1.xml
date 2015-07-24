@@ -2,22 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    xmlns:card/-view="http://schema.android.com/apk/res-auto&#8221;>
+    <!--xmlns:card/-view="http://schema.android.com/apk/res-auto&#8221;>-->
 
-    <android.support.v7.widger.Cardview
-        xmlns:card_view="http://schemas.android.com/apk/res-auto&amp;#8221;
-        android:id="
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />@+id/card_view"
-        android:layout_gravity="center"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        card_view:cardCornerRadius="4dp">
+    <!--<android.support.v7.widger.Cardview-->
+        <!--xmlns:card_view="http://schemas.android.com/apk/res-auto&amp;#8221;-->
+        <!--android:id="-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" /><![CDATA[@+id/card_view"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--card_view:cardCornerRadius="4dp">-->
 
-    <TextView
-        android:id="@+id/info_text"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Card view testing 1 ,2,3,3"/>
+    <!--]]>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/info_text"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="Card view testing 1 ,2,3,3"-->
+        <!--android:textSize="@dimen/abc_text_size_display_2_material" />-->
 
 </LinearLayout>

@@ -67,21 +67,26 @@ public class one extends ActionBarActivity {
                 String itemValue = (String) listView.getItemAtPosition(position);
 
                 // Show Alert
-                Toast.makeText(getApplicationContext(),
-                        "Story :" + " " + itemValue, Toast.LENGTH_LONG)
-                        .show();
+//                Toast.makeText(getApplicationContext(),
+//                        "Story :" + " " + itemValue, Toast.LENGTH_LONG)
+//                        .show();
+
+                if (position == 0) {
+                    Intent myIntent = new Intent(getApplicationContext(), story1.class);
+                    startActivity(myIntent);
+                }
 
             }
-//            listView.OnItemClickListener(new OnItemClickListener() {
-//                public void onItemClick(AdapterView<?> arg 0, View v, int position, long id) {
-//                    if (position == 0)
-//                    {
-//                        Intent myIntent = new Intent(getApplicationContext(), story1.class);
-//                        startActivity(myIntent);
-//                    }
-//                }
-//            });
+
         });
+//        listView.OnItemClickListener(new AdapterView.OnItemClickListener() {
+//            public void onItemClick(AdapterView<?> arg 0, View v, int position, long id) {
+//                if (position == 0) {
+//                    Intent myIntent = new Intent(getApplicationContext(), story1.class);
+//                    startActivity(myIntent);
+//                }
+//            }
+//        });
 
     }
 }
